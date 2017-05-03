@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<script src="js/pgb.js"></script>
+		<script src="cordova.js"></script>
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body onload="init()">
+		
+		<!-- My app main page -->
+		<div data-role="page" id="pageone">
+		  <div data-role="header">
+		  	<a href="#myPanel" class="ui-btn ui-btn-inline">Drinki</a>
+			<h1>Przepisy na drinki</h1>
+		  </div>
+		  <div data-role="main" class="ui-content">
+			<div data-role="panel" id="myPanel" data-display="overlay">
+
+			  <h2>Drinki</h2>
+				<a href="#sexon" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Sex on the beach</a>
+				<a href="#blackrusian" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Black rusian</a>
+				<a href="#srubokret" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Śrubokręt</a>
+			  	<a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline">Zamknij</a>
+			</div>
+			<p>
+				Proszę wybrać ulubiony drink
+			</p>
+			
+		  </div>
+		  <div data-role="footer" data-position="fixed">
+			<h1>(c) Piotr Siekierski</h1>
+		  </div> 
+		</div> 
+		
+		<!-- Mobile device details page -->
+		<div data-role="page" id="details" data-dialog="true">
+			<div data-role="header" data-theme="a">
+				<h1>It's me</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<p id="deviceDetails">Place for device details ...</p>
+			</div>
+		</div>
+
+		<!-- Sex on the beach.................................................................................................-->
+		<div data-role="page" id="sexon">
+		  <div data-role="header">
+		  	<a href="#myPanel" class="ui-btn ui-btn-inline">Drinki</a>
+			<h1>Sex on the beach</h1>
+			
+		  </div>
+		  <div data-role="main" class="ui-content">
+		  <div data-role="panel" id="myPanel" data-display="overlay">
+
+			<h2>Drinki</h2>
+			<a href="#sexon" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Sex on the beach</a>
+			<a href="#blackrusian" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Black rusian</a>
+			<a href="#srubokret" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Śrubokręt</a>
+			<a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline">Zamknij</a>
+		  </div>
+			<p>
+				Sex on the Beach jest jednym z wielu typowych koktajli, których jedynym i najważniejszym przekazaem jest robienie "tego". Czy ten słodki drink zasłużył na tą wyjątkową nazwę? Oceńcie sami.
+			</p>
+			<img src="img/sexon.png" alt="Tekst alternatywny" />
+			<p>
+				<h2>Składniki</h2>
+				<ul>
+					<li>wódka - 40 ml</li>
+					<li>likier kokosowy - 20 ml</li>
+					<li>likier brzoskwiniowy - 20 ml</li>
+					<li>Pomarańcza - kawałek do dekoracji</li>
+					<li>sok żurawinowy (splash) - 40 ml</li>
+					<li>sok pomarańczowy - 40 ml</li>
+					<li>lód - kilka kostek</li>
+				</ul>
+
+
+			</p>			
+			
+			<h2>Sposób przygotowania drinka</h2>
+
+
+
+				Do wypełnionej lodem szklanicy barmańskiej wlać składniki nie uwzględniając soku żurawinowego. Wlane składniki wstrząsnąć w shakerze przez ok 10s sek. Następnie zawartość przelać do uprzednio przygotowanej szklanki typu highball, bądź też fancy wypełnionej do połowy lodem. Następnie dolać tzw. splash, którym w tym momencie jest sok żurawinowy. Ozdobić drinka.W przypadku nie posiadania soku żurawinowego, jako zastępnik używa się soku z czarnej porzeczki, bądź też syropu grenadine. Często używa się syropów zamiast likierów, przez co drink jest jeszcze słodszy lecz w klasycznym wykonaniu drink powinien być na bazie likierów.
+
+			</p>
+			
+		  </div>
+		  <div data-role="footer" data-position="fixed">
+			<h1>(c) Piotr Siekierski</h1>
+		  </div> 
+		</div>
+		<!-- black rusian.................................................................................................-->
+
+		<div data-role="page" id="blackrusian">
+		  <div data-role="header">
+		  	<a href="#myPanel" class="ui-btn ui-btn-inline">Drinki</a>
+			<h1>Black Russian</h1>
+			
+		  </div>
+		  <div data-role="main" class="ui-content">
+		  <div data-role="panel" id="myPanel" data-display="overlay">
+
+			<h2>Drinki</h2>
+			<a href="#sexon" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Sex on the beach</a>
+			<a href="#blackrusian" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Black rusian</a>
+			<a href="#srubokret" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Śrubokręt</a>
+			<a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline">Zamknij</a>
+		  </div>
+			<p>
+				Black Russian to drink składający się z wódki i likieru kawowego, którym najczęściej jest tutaj Kahlua. Historia Black Russian, w przeciwieństwie do krewnego tego drinka – White Russian, jest w miarę jasna i ustalona. O ile ten “biały Rosjanin” kojarzy się z filmowym “Gościem” z Big Lebowski, o tyle historia i nazwa “czarnego Rosjanina” jest już bardziej drinkowa – pochodzi od nazwy bazowego alkoholu.
+			</p>
+			<img src="img/blackrusian.png" alt="Tekst alternatywny" />
+			<p>
+				<h2>Składniki</h2>
+				<ul>
+					<li>wódka - 100 ml</li>
+					<li>Kalhua - 50 ml</li>
+					<li>lód - kilka kostek</li>
+				</ul>
+
+
+			</p>			
+			
+			<h2>Sposób przygotowania drinka</h2>
+
+				Przygotowanie Black Russian nie powinno przysporzyć większych trudności ani przy zakupie składników, ani przy samym przyrządzaniu drinka. Wystarczy wypełnić tumbler na lodzie, który jednocześnie będzie służyć jako naczynie do podania drinka, do połowy kostkami lodu. Następnie należy wlać 1,5 miarki wódki i 0,75 miarki likieru kawowego. Potem wystarczy już tylko bardzo delikatnie zamieszać drinka. Black Russian widnieje na liście przepisów IBA.
+
+			</p>
+			
+		  </div>
+		  <div data-role="footer" data-position="fixed">
+			<h1>(c) Piotr Siekierski</h1>
+		  </div> 
+		</div>
+		<!-- śrubokręt.................................................................................................-->
+		<div data-role="page" id="srubokret">
+		  <div data-role="header">
+		  	<a href="#myPanel" class="ui-btn ui-btn-inline">Drinki</a>
+			<h1>Śrubokręt</h1>
+			
+		  </div>
+		  <div data-role="main" class="ui-content">
+		  <div data-role="panel" id="myPanel" data-display="overlay">
+
+			<h2>Drinki</h2>
+			<a href="#sexon" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Sex on the beach</a>
+			<a href="#blackrusian" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Black rusian</a>
+			<a href="#srubokret" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Śrubokręt</a>
+			<a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline">Zamknij</a>
+		  </div>
+			<p>
+				Śrubokręt jest prostą mieszanką, wódki z sokiem pomarańczowym. Prostota i genialność Screwdrivera, bo taka jest angielska nazwa, uczyniły z niego napój popijany niemal wszędzie i o każdej porze. Schłodzony karton soku pomarańczowego i butelka wódki przeobrażają akademiki,parki w przenośne bary.
+			</p>
+			<img src="img/srubokret.png" alt="Tekst alternatywny" />
+			<p>
+				<h2>Składniki</h2>
+				<ul>
+					<li>wódka - 60 ml</li>
+					<li>sok pomarańczowy - 150 ml (dobrzy gdyby był świeżo wyciskany)</li>
+					<li>plasterek pomarańczy - dla dekoracji</li>
+				</ul>
+
+
+			</p>			
+			
+			<h2>Sposób przygotowania drinka</h2>
+
+				Jeśli chcesz przygotować Screwdrivera, przygotuj go dobrze. Nigdy nie sięgaj po gotowy sok z pomarańczy, jeśli tylko możesz przygotować świeży. Zabiera to trochę więcej czasu, ale dzięki temu koktajl staje się lepszy. Trzymaj się z daleka od poślednich tanich wódek, one nadają się wyłącznie do wywoływania kaca.
+
+			</p>
+			
+		  </div>
+		  <div data-role="footer" data-position="fixed">
+			<h1>(c) Piotr Siekierski</h1>
+		  </div> 
+		</div>
+	</body>
+</html>
